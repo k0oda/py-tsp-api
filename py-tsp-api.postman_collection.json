@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "cfbcad6d-27b0-42e8-99a3-cc86f3ad973e",
+		"name": "py-tsp-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28030878"
+	},
+	"item": [
+		{
+			"name": "ASR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"audio_source\": \"https://www.russianforfree.com/resources/audio_dialogues/01-01-lutshiy-drug.mp3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/asr",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"asr"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:8000",
+			"type": "string"
+		}
+	]
+}
